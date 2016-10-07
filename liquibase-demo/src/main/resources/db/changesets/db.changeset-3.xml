@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
+
+	<changeSet id="6" author="TEST_USER">
+		<tagDatabase tag="TAG_3" />
+	</changeSet>
+
+	<changeSet id="7" author="TEST_USER_2">
+		<modifyDataType columnName="companyName" newDataType="varchar(200)"
+			tableName="company" />
+		<rollback>
+			<modifyDataType columnName="companyName" newDataType="varchar(150)" tableName="company"/>
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>
