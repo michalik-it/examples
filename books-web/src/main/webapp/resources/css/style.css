@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+.north .header{
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.footer {
+	float: right;
+}
+
+.welcomBody {
+	text-align: center;
+}
+
+.menu {
+	width: 95% !important;
+}
+
+.ui-widget,.ui-widget .ui-widget {
+    font-size: 90% !important;
+}

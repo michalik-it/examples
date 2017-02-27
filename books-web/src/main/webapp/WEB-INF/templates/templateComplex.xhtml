@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<ui:insert name="title">
+		<title>Movie Rental - Kamil Michalik Personal Project</title>
+	</ui:insert>
+	<h:outputStylesheet library="css" name="style.css" />
+</h:head>
+
+<!--Main Body -->
+<h:body>
+
+	<p:layout fullPage="true">
+
+		<p:layoutUnit position="north" size="70"
+			header="Movie Rental - Personal Project Kamil Michalik"
+			styleClass="north">
+			<div class="header">Movie Rental - Personal Project Kamil
+				Michalik - Stack: Spring Boot, Spring Security, Spring JPA,
+				Hibernate, JSF, Spring MVC</div>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="south" size="40">
+			<div class="footer">Copyright © Movie Rental 2016, EPAM Systems
+			</div>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="west" size="220"
+			collapsible="true">
+			<h:form prependId="false">
+				<p:menu styleClass="menu">
+					<p:submenu label="Movie menu">
+						<p:menuitem value="Main page" action="/index?faces-redirect=true" icon="fa fa-video-camera" />
+						<p:menuitem value="List movies" action="movies/index?faces-redirect=true" icon="fa fa-list-ul" />
+						<p:menuitem value="Add movie" action="movies/addMovie?faces-redirect=true" icon="fa fa-plus" />
+					</p:submenu>
+				</p:menu>
+			</h:form>
+		</p:layoutUnit>
+
+		<p:layoutUnit position="center">
+			<ui:insert name="body" />
+		</p:layoutUnit>
+
+	</p:layout>
+
+</h:body>
+
+
+</html>

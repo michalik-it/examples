@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"  
+encoding="UTF-8">
+
+<html>
+
+<h:head>
+
+</h:head>
+
+<!--Main Body -->
+<h:body>
+
+	<ui:composition template="/WEB-INF/templates/templateComplex.xhtml">
+		<ui:define name="body">
+			<div class="welcomBody">
+				<h3>
+					<h:outputFormat value="#{mainController.welcomeMessage}">
+						<f:param value="#{mainController.count}" />
+					</h:outputFormat> 
+				</h3>
+			</div>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+
+</html>
+</f:view>
