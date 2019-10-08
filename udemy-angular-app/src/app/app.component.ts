@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-angular-app';
+
+  constructor() {
+    this.title = 'udemy-angular-app';
+  }
 }

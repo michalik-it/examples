@@ -11,6 +11,10 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'Test recipe',
       'Some description',
+      'https://c.pxhere.com/images/85/3d/5a8e2e8aa5b6305a1f8ef7c7e685-1589197.jpg!d'),
+    new Recipe(
+      'Test recipe',
+      'Some description',
       'https://c.pxhere.com/images/85/3d/5a8e2e8aa5b6305a1f8ef7c7e685-1589197.jpg!d')
   ];
 
