@@ -13,7 +13,4 @@ export class AppComponent {
     this.title = 'udemy-angular-app';
   }
 
-  onNavigate(featureSelected: string) {
-    this.feature = featureSelected;
-  }
 }
